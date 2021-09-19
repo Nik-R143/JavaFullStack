@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: unset;
+}
+.nav{
+    width: 100%;
+    background-color: #0009;
+    color: #fff;
+}
+.menu_bar{
+    line-height: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav .menu_bar{
+    float: right ;
+    margin-right: 1px;
+}
+.nav .menu_bar .menu_items{
+    list-style-type: none;
+    display: inline-block;
+    transition: 1s;
+}
+.nav .menu_bar .menu_items:hover{
+    background-color: #0099e6;
+}
+.nav .menu_bar  a{    
+    text-decoration: none;
+    color: #fff;   
+    padding: 30px;
+    line-height: 60px;
+}
+.sub_bar{
+    display: inline-block;
+    text-transform: none;
+    display: block;
+    position: relative;
+    width: 220px;
+    background-color: rgba(0,0,0,0.8);
+}
+.menu_bar ul li:hover .sub_bar{
+    display: inline-block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu_bar ul li:hover .sub_bar ul{
+    display: inline-block;
+    margin: 10px;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider figure
+{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 30s infinite;
+}
+.slider figure div
+{
+    float: left;
+    width: 20%;
+}
+.slider figure img
+{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+@keyframes animate{
+    0%{left: 0%;}
+    20%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -300%;}
+    80%{left: -400%;}
+}
+
+
+/*Blog us*/
+.clearfix_img{
+    float: left;
+    border-radius: 10%;
+    margin: 15px;
+}
+.clearfix{
+    content: "";
+    clear: both;
+    display: table;
+    margin: 15px;
+    background-image: url("MH Img/about21.jpg");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#about_para{
+    text-indent: 4em;
+    text-align: justify;
+    margin: 15px;
+    font-family: all;
+}
+/*Destinations*/
+
+#desti_img1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+#desti_para{
+     text-align: center;
+     line-height:400px;
+     font-size: 30px;
+     font-family: cursive;
+     color: white;
+  text-shadow: 1px 1px 20px #ff0000, 0 0 25px red, 0 0 20px #ff9900;
+}
+#desti_heading{
+    font-family: unset;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    color: #3399ff;
+    text-shadow: 0 0 8px #1a8cff, 0 0 2px #000;
+}
+
+#border{
+    border-color: #3399ff;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    margin: 5%;
+}
+
+#desti_list{
+    margin-left: 50px;
+}
+*{
+    box-sizing: border-box;
+}
+.gallery {
+  border: 2px solid #ccc;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gallery:hover {
+  border: 2px solid #3399ff;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.city_name {
+  padding: 15px;
+  text-align: center;
+}
+.responsive{
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+  
+}
+
+/*About Us Page*/
+#contact_para{
+    margin: 20px;
+    text-indent: 3em;
+    font-size: 21px;
+    font-family:unset;
+}
+#contact_footer{
+    background-color: rgba(0,0,0,0.7);
+}
+#contact_h3{
+    text-align: right;
+    margin: 20px;
+    color: #fff;
+}
+.about_heading{
+    margin: 15px;
+    text-shadow: 0 0 8px #ff6600, 0 0 2px #ff6600;
+}
+.foot_icon ul
+{
+    float: left;
+    display: inline-flex;
+    list-style: none;
+}
+.foot_icon ul li
+{
+    width:50px;
+    margin:25px;    
+    padding:5px;
+  font-size: 40px;
+}
+.foot_icon ul li a
+{
+    color:#fff;
+}
+.foot_icon ul li a .fa-instagram:hover
+{
+    color:#ff6600;
+}
+.foot_icon ul li a .fa-facebook:hover
+{
+    color: #000066;
+}
+.foot_icon ul li a .fa-twitter:hover
+{
+    color:#66b3ff;
+}
+.foot_icon ul li a .fa-linkedin:hover
+{
+    color:#0059b3;
+}
+
+/*Login Page*/
+.loginbox{
+    width: 320px;
+    background: #212121;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:  #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 40px;
+    border-radius: 30px;
+}
+.loginbox label{
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="Username"], input[type="Password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+.loginbox input[type="Submit"]
+{
+    border: transparent;
+    height: 25px;
+    background:  crimson;
+    color: white;
+    font-size: 15px ;
+    border-radius: 20px;
+}
+.loginbox input[type="Submit"]:hover
+{
+    background: #fff;
+    color:  #ff99c2;
+    font-weight: bold;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.loginbox a:hover 
+{
+    color: crimson;
+}   
+
+/*Registration Page*/
+
+.register
+{
+    width: 400px;
+    margin: 10px auto;
+}
+h1
+{
+    text-align: center;
+    padding: 5px;
+    font-family: sans-serif;
+}
+.register1 
+{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+label
+{
+    margin: 25px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+input{
+    text-align: center;
+}
+center #submit
+{
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: crimson;
+    color: #fff;
+    margin: 20px;
+
+}
+
+form #registerform
+{
+    margin: 40px;
+}
